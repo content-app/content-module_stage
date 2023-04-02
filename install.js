@@ -78,6 +78,6 @@ module.exports = async function ({ client, space, environment }) {
         }
     }
 
-    const contentType = await environment.createContentTypeWithId(module, 'ModuleStage');
+    const contentType = await environment.createContentTypeWithId('ModuleStage', module);
     await contentType.publish();
 };
